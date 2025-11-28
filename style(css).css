@@ -1,0 +1,14 @@
+h1{
+    color: red;
+    padding-left:200px
+
+}
+/* body{
+    background-color: black;
+} */
+.card1{
+    height:100px;
+    width:100px;
+    border-radius: 20px;
+    margin: 20px;
+}

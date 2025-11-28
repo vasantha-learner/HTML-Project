@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+    <header>
+        <table width="100%">
+        <tr>
+            <td align="left">
+                <img src="images.png" width="60" height="60"></td>
+                <td align="center"> 
+               <h1> HTML COURSE </h1> 
+                </td>
+            </td>
+            <td align="right">
+                <nav>
+                    <a href="#basic">Basic Tags</a>  &nbsp;&nbsp;
+                    <a href="#formatting Tags">Formatting Tags</a>  &nbsp;&nbsp;
+                    <a href="#marquee">Marquee</a>  &nbsp;&nbsp;
+                    <a href="#multimedia">Multimedia</a>    &nbsp;&nbsp;
+                    <a href="#table">Tables</a>
+                </nav>
+            </td>
+        </tr>
+        </table>
+    </header>
+    <hr>
+    
+
+<section id="history">
+
+
+    <h2>HTML Versions & History</h2>
+    <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It has evolved significantly since its inception:</p>
+    
+    <ul>
+        <li>
+            <b>HTML 1.0 (1991)</b>
+            <p>The very first version, created by Tim Berners-Lee. It supported basic text formatting, headings, paragraphs, lists, and links. There was no support for images, tables, scripts, or multimedia. Mainly used to display static documents.</p>
+        </li>
+
+        <li>
+            <b>HTML 2.0 (1995)</b>
+            <p>Standardized by IETF. Introduced more structure and interactive features, such as forms, tables, text alignment, and hyperlinks. It became the baseline for all subsequent HTML versions.</p>
+        </li>
+
+        <li>
+            <b>HTML 3.2 (1997)</b>
+            <p>Standardized by W3C. Added:  
+                <ul>
+                    <li>Support for scripting (JavaScript introduction)</li>
+                    <li>Applet integration</li>
+                    <li>Complex tables and layouts</li>
+                    <li>New text formatting tags like &lt;sup&gt; and &lt;sub&gt;</li>
+                </ul>
+            </p>
+        </li>
+
+        <li>
+            <b>HTML 4.0 (1997)</b>
+            <p>Divided into three flavors:  
+                <ul>
+                    <li><b>Strict</b> - Deprecated outdated tags, focus on CSS for styling</li>
+                    <li><b>Transitional</b> - Allowed some presentational tags for backward compatibility</li>
+                    <li><b>Frameset</b> - For creating frames-based layouts</li>
+                </ul>
+                Introduced accessibility features, better form controls, and CSS integration.
+            </p>
+        </li>
+
+        <li>
+            <b>HTML 4.01 (1999)</b>
+            <p>Refined HTML 4.0, fixed errors, and clarified specifications. Fully integrated with CSS 1.0 and scripting. Marked the move toward separation of content and presentation.</p>
+        </li>
+
+        <li>
+            <b>XHTML 1.0 (2000)</b>
+            <p>An XML-based reformulation of HTML 4.01. Stricter syntax rules:  
+                <ul>
+                    <li>All tags must be closed</li>
+                    <li>Elements must be properly nested</li>
+                    <li>Attribute values must be quoted</li>
+                </ul>
+                XHTML aimed to improve consistency, compatibility, and machine readability.
+            </p>
+        </li>
+
+        <li>
+            <b>HTML5 (2014)</b>
+            <p>The modern standard. Key features include:  
+                <ul>
+                    <li>Semantic tags: &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;</li>
+                    <li>Multimedia support: &lt;audio&gt;, &lt;video&gt;</li>
+                    <li>Canvas &lt;canvas&gt; for graphics and animations</li>
+                    <li>Local storage &lt;localStorage&gt; and session storage</li>
+                    <li>Form enhancements: new input types and attributes</li>
+                    <li>Offline support with Application Cache</li>
+                    <li>Better accessibility and mobile responsiveness</li>
+                </ul>
+                HTML5 is the foundation for modern web applications and interactive web pages.
+            </p>
+        </li>
+
+        <li>
+            <b>Deprecated / Obsolete Features</b>
+            <p>Over time, many HTML tags became deprecated or obsolete:  
+                <ul>
+                    <li>&lt;font&gt;, &lt;center&gt;, &lt;applet&gt;, &lt;marquee&gt;</li>
+                    <li>Frames &lt;frame&gt; and &lt;frameset&gt;</li>
+                    <li>Presentational attributes like bgcolor, align, and border</li>
+                </ul>
+                Modern HTML encourages using CSS and semantic markup instead.
+            </p>
+        </li>
+
+        <li>
+            <b>Milestones & Future</b>
+            <p>HTML continues to evolve with HTML5.1 and HTML5.2 adding minor improvements. The focus remains on:  
+                <ul>
+                    <li>Better semantic structure</li>
+                    <li>Improved multimedia and graphics support</li>
+                    <li>Enhanced accessibility and mobile support</li>
+                    <li>Integration with modern APIs like WebRTC, WebGL, and Geolocation</li>
+                </ul>
+            </p>
+        </li>
+    </ul>
+
+</section>
+
+
+<section id="basic">
+    <h2>Basic HTML Tags</h2>
+    <p>Basic HTML tags are the building blocks of any web page. They define the structure and content. Below is a detailed summary of each tag:</p>
+
+    <ul>
+        <li>
+            <b>&lt;!DOCTYPE html&gt;</b><br>
+            <b>Definition:</b> Declares the HTML version used.<br>
+            <b>Purpose:</b> Helps the browser render the page correctly.<br>
+            <b>Example:</b> <code>&lt;!DOCTYPE html&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;html&gt; ... &lt;/html&gt;</b><br>
+            <b>Definition:</b> Root element of an HTML document.<br>
+            <b>Purpose:</b> Contains all HTML content for the page.<br>
+            <b>Example:</b> <code>&lt;html&gt; ... &lt;/html&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;head&gt; ... &lt;/head&gt;</b><br>
+            <b>Definition:</b> Contains meta-information about the document.<br>
+            <b>Purpose:</b> Used to include page title, scripts, styles, and metadata.<br>
+            <b>Example:</b><br>
+            <code>
+                &lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+                &lt;/head&gt;
+            </code>
+        </li><br>
+
+        <li>
+            <b>&lt;title&gt; ... &lt;/title&gt;</b><br>
+            <b>Definition:</b> Specifies the title of the web page.<br>
+            <b>Purpose:</b> Displayed in browser tab and search engines.<br>
+            <b>Example:</b> <code>&lt;title&gt;My Page&lt;/title&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;body&gt; ... &lt;/body&gt;</b><br>
+            <b>Definition:</b> Contains all visible content of a web page.<br>
+            <b>Purpose:</b> Holds text, images, tables, links, and other elements.<br>
+            <b>Example:</b> <code>&lt;body&gt;Hello World&lt;/body&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;h1&gt; ... &lt;h6&gt;</b><br>
+            <b>Definition:</b> Heading tags. <b>h1</b> largest, <b>h6</b> smallest.<br>
+            <b>Purpose:</b> Structure content hierarchically for readability and SEO.<br>
+            <b>Example:</b> <code>&lt;h1&gt;Main Heading&lt;/h1&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;p&gt; ... &lt;/p&gt;</b><br>
+            <b>Definition:</b> Paragraph tag.<br>
+            <b>Purpose:</b> Organizes text into separate paragraphs.<br>
+            <b>Example:</b> <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;br&gt;</b><br>
+            <b>Definition:</b> Line break.<br>
+            <b>Purpose:</b> Moves content to a new line without creating a new paragraph.<br>
+            <b>Example:</b> <code>Line1&lt;br&gt;Line2</code>
+        </li><br>
+
+        <li>
+            <b>&lt;hr&gt;</b><br>
+            <b>Definition:</b> Horizontal rule / line.<br>
+            <b>Purpose:</b> Separates content visually.<br>
+            <b>Example:</b> <code>&lt;hr&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;a href="URL"&gt; ... &lt;/a&gt;</b><br>
+            <b>Definition:</b> Anchor tag / hyperlink.<br>
+            <b>Purpose:</b> Navigate to another page or section.<br>
+            <b>Example:</b> <code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</b><br>
+            <b>Definition:</b> List tags. <b>ul</b> unordered, <b>ol</b> ordered, <b>li</b> list item.<br>
+            <b>Purpose:</b> Organize information in bullet or numbered lists.<br>
+            <b>Example:</b><br>
+            <code>
+                &lt;ul&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </code>
+        </li><br>
+
+        <li>
+            <b>&lt;img src="URL" alt="text"&gt;</b><br>
+            <b>Definition:</b> Image tag.<br>
+            <b>Purpose:</b> Displays images on a page.<br>
+            <b>Example:</b> <code>&lt;img src="image.png" alt="Sample Image"&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</b><br>
+            <b>Definition:</b> Table structure tags.<br>
+            <b>Purpose:</b> Organize data in rows and columns.<br>
+            <b>Example:</b>
+            <code>
+                &lt;table border="1"&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;&lt;th>Name&lt;/th&gt;&lt;th>Age&lt;/th&gt;&lt;/tr&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;&lt;td>John&lt;/td&gt;&lt;td>25&lt;/td&gt;&lt;/tr&gt;<br>
+                &lt;/table&gt;
+            </code>
+        </li><br>
+
+        <li>
+            <b>&lt;div&gt; ... &lt;/div&gt;</b><br>
+            <b>Definition:</b> Division / block container.<br>
+            <b>Purpose:</b> Group content for layout or styling purposes.<br>
+            <b>Example:</b> <code>&lt;div&gt;This is a block.&lt;/div&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;span&gt; ... &lt;/span&gt;</b><br>
+            <b>Definition:</b> Inline container.<br>
+            <b>Purpose:</b> Apply styles or group text inline.<br>
+            <b>Example:</b> <code>&lt;span&gt;Highlighted text&lt;/span&gt;</code>
+        </li>
+    </ul><br>
+
+    <p><i>These basic tags provide the foundation for all other HTML elements. Understanding them is essential for building any web page.</i></p>
+</section>
+
+<section id="formatting Tags">
+    <h2>HTML Text Formatting Tags</h2>
+    <p>Text formatting tags are used to define the style and importance of text within a document. They control how text appears and how screen readers or search engines interpret it. Below is a detailed summary of each tag:</p>
+
+    <ul>
+        <li>
+            <b>&lt;strong&gt; ... &lt;/strong&gt;</b><br>
+            <b>Definition:</b> Defines **strong importance** (semantic emphasis).<br>
+            <b>Purpose:</b> Visually renders as **bold** by default, but its main function is semantic to indicate importance.<br>
+            <b>Example:</b> <code>This is &lt;strong&gt;important&lt;/strong&gt; text.</code>
+        </li><br>
+
+        <li>
+            <b>&lt;em&gt; ... &lt;/em&gt;</b><br>
+            <b>Definition:</b> Defines **emphasis** (semantic emphasis).<br>
+            <b>Purpose:</b> Visually renders as *italic* by default. Used for stress emphasis, like a word or phrase that would be spoken differently.<br>
+            <b>Example:</b> <code>This is &lt;em&gt;emphasized&lt;/em&gt; text.</code>
+        </li><br>
+
+        <li>
+            <b>&lt;b&gt; ... &lt;/b&gt;</b><br>
+            <b>Definition:</b> Bold text (presentational).<br>
+            <b>Purpose:</b> Draws attention to the text without conveying extra importance (e.g., product names or keywords).<br>
+            <b>Example:</b> <code>This is &lt;b&gt;bold&lt;/b&gt; text.</code>
+        </li><br>
+
+        <li>
+            <b>&lt;i&gt; ... &lt;/i&gt;</b><br>
+            <b>Definition:</b> Italic text (presentational).<br>
+            <b>Purpose:</b> Indicates an alternative voice or mood, such as a technical term, a foreign phrase, or a thought.<br>
+            <b>Example:</b> <code>This is &lt;i&gt;italic&lt;/i&gt; text.</code>
+        </li><br>
+
+        <li>
+            <b>&lt;mark&gt; ... &lt;/mark&gt;</b><br>
+            <b>Definition:</b> Marked / highlighted text.<br>
+            <b>Purpose:</b> Used to highlight or mark text that is of particular relevance in the current context.<br>
+            <b>Example:</b> <code>Find the &lt;mark&gt;best price&lt;/mark&gt; now.</code>
+        </li><br>
+
+        <li>
+            <b>&lt;del&gt; ... &lt;/del&gt;</b><br>
+            <b>Definition:</b> Deleted (strikethrough) text.<br>
+            <b>Purpose:</b> Represents content that has been deleted from the document (often shown with a line through it).<br>
+            <b>Example:</b> <code>Price: &lt;del&gt;$100&lt;/del&gt; $75</code>
+        </li><br>
+
+        <li>
+            <b>&lt;ins&gt; ... &lt;/ins&gt;</b><br>
+            <b>Definition:</b> Inserted (underlined) text.<br>
+            <b>Purpose:</b> Represents content that has been inserted into the document (often shown with an underline).<br>
+            <b>Example:</b> <code>The change &lt;ins&gt;was approved&lt;/ins&gt; today.</code>
+        </li><br>
+
+        <li>
+            <b>&lt;sub&gt; ... &lt;/sub&gt;</b><br>
+            <b>Definition:</b> Subscript text.<br>
+            <b>Purpose:</b> Used for chemical formulas or mathematical variables placed below the normal line.<br>
+            <b>Example:</b> <code>H&lt;sub&gt;2&lt;/sub&gt;O</code>
+        </li><br>
+
+        <li>
+            <b>&lt;sup&gt; ... &lt;/sup&gt;</b><br>
+            <b>Definition:</b> Superscript text.<br>
+            <b>Purpose:</b> Used for footnotes, exponents, or ordinals placed above the normal line.<br>
+            <b>Example:</b> <code>E = mc&lt;sup&gt;2&lt;/sup&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;small&gt; ... &lt;/small&gt;</b><br>
+            <b>Definition:</b> Small print text.<br>
+            <b>Purpose:</b> Used for side comments, copyright, or fine print (reducing the font size one level).<br>
+            <b>Example:</b> <code>&lt;small&gt;Terms and Conditions Apply.&lt;/small&gt;</code>
+        </li>
+    </ul><br>
+
+</section>
+
+<section id="table">
+    <h2>HTML Table Tags</h2>
+    <p>HTML table tags are used to define data in a grid structure of rows and columns. Modern HTML5 emphasizes using semantic tags (like <thead>, <tbody>, <tfoot>) for accessibility and separating content from presentation.</p>
+
+    <ul>
+        <li>
+            <b>&lt;table&gt; ... &lt;/table&gt;</b><br>
+            <b>Definition:</b> The main container for all tabular data.<br>
+            <b>Purpose:</b> Marks the beginning and end of a data table.<br>
+            <b>Example:</b> <code>&lt;table&gt;...&lt;/table&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;caption&gt; ... &lt;/caption&gt;</b><br>
+            <b>Definition:</b> A title or summary for the table.<br>
+            <b>Purpose:</b> Provides a brief description of the table's content, which is important for accessibility.<br>
+            <b>Example:</b> <code>&lt;caption&gt;Monthly Sales Data&lt;/caption&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;tr&gt; ... &lt;/tr&gt;</b><br>
+            <b>Definition:</b> Table Row.<br>
+            <b>Purpose:</b> Defines a single row of cells in a table. It is the immediate child of <table>, <thead>, <tbody>, or <tfoot>.<br>
+            <b>Example:</b> <code>&lt;tr&gt;...&lt;/tr&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;th&gt; ... &lt;/th&gt;</b><br>
+            <b>Definition:</b> Table Header Cell.<br>
+            <b>Purpose:</b> Defines a cell that contains header information (column or row labels). Text is typically bold and centered by default.<br>
+            <b>Example:</b> <code>&lt;th scope="col"&gt;Product Name&lt;/th&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;td&gt; ... &lt;/td&gt;</b><br>
+            <b>Definition:</b> Table Data Cell.<br>
+            <b>Purpose:</b> Defines a standard data cell within a table. This is the content of the table.<br>
+            <b>Example:</b> <code>&lt;td&gt;Laptop Pro&lt;/td&gt;</code>
+        </li><br>
+        
+        <li style="list-style-type: none;">
+            <hr>
+            <h3>Semantic Grouping Tags (Best Practice for HTML5):</h3>
+        </li>
+
+        <li>
+            <b>&lt;thead&gt; ... &lt;/thead&gt;</b><br>
+            <b>Definition:</b> Table Head.<br>
+            <b>Purpose:</b> Groups the set of introductory rows (usually containing column headers) at the top of a table.<br>
+            <b>Example:</b> <code>&lt;thead&gt;&lt;tr&gt;&lt;th&gt;...&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;tbody&gt; ... &lt;/tbody&gt;</b><br>
+            <b>Definition:</b> Table Body.<br>
+            <b>Purpose:</b> Groups the primary content rows of the table. This is the main data section.<br>
+            <b>Example:</b> <code>&lt;tbody&gt;...data rows...&lt;/tbody&gt;</code>
+        </li><br>
+
+        <li>
+            <b>&lt;tfoot&gt; ... &lt;/tfoot&gt;</b><br>
+            <b>Definition:</b> Table Foot.<br>
+            <b>Purpose:</b> Groups the summary rows (like totals or footnotes) at the bottom of a table. It must come after <tbody> in HTML5.<br>
+            <b>Example:</b> <code>&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Total&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;</code><br>
+        </li>
+    </ul><br>
+
+
+
+    <table border="1" style="border-collapse: collapse; width: 100%;">
+        <caption><strong> and Annual Sales Report (2024-2025)</strong></caption>
+
+        <colgroup>
+            <col style="background-color: #f0f0f0;">
+            <col span="3">
+            <col>
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2">Category</th>
+                
+                <th colspan="3">2024 Performance (in USD)</th>
+
+                <th rowspan="2">Annual Total</th>
+            </tr>
+            <tr>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Electronics</th>
+                <td>12,500</td>
+                <td>15,800</td>
+                <td>17,100</td>
+                <td>45,400</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Books</th> 
+                <td>5,100</td>
+                <td>6,200</td>
+                <td>4,900</td>
+                <td>16,200</td>
+            </tr>
+            <tr>
+                <td colspan="3"><i>Q4 Forecast: 7,000</i></td>
+                <td></td> </tr>
+        </tbody>
+    </table>
+
+    <p><i>The grouping tags (&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;) are essential for making tables accessible and enabling features like fixed headers on long tables.</i></p>
+</section>
+
+
+<section id="marquee">
+    <h2>Marquee Tag</h2>
+
+    
+    <h3>Definition:</h3>
+    <p>The <b>&lt;marquee&gt;</b> tag is used to create scrolling text or images horizontally or vertically across a web page. It is a non-standard HTML tag, deprecated in modern HTML, but still supported in many browsers.</p>
+
+    
+    <h3>Purpose / Usage:</h3>
+    <p>It is used to attract attention by animating text or images across the screen. Common uses include scrolling announcements, advertisements, or highlights.</p>
+
+    
+    <h3>Common Attributes:</h3>
+    <ul>
+        <li><b>direction -</b> Specifies the scrolling direction. Values: left, right, up, down. Example: <code>&lt;marquee direction="left"&gt;</code></li>
+        <li><b>behavior -</b>Defines the scrolling type. Values: scroll (default), slide, alternate. Example: <code>&lt;marquee behavior="alternate"&gt;</code></li>
+        <li><b>scrollamount -</b> Controls the speed of scrolling. Higher numbers move faster. Example: <code>&lt;marquee scrollamount="5"&gt;</code></li>
+        <li><b>loop  -</b>Number of times the marquee scrolls. Default is infinite. Example: <code>&lt;marquee loop="3"&gt;</code></li>
+        <li><b>width / height  -</b> Sets the marquee size. Example: <code>&lt;marquee width="300"&gt;</code></li>
+    </ul>
+
+
+
+    <h3>Example 1: Text scrolling left</h3>
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        &lt;!DOCTYPE html&gt; &nbsp;&nbsp; &lt;html&gt; &nbsp;&nbsp; &lt;head&gt; &nbsp;&nbsp; &lt;title&gt; &nbsp;&nbsp; &lt;body&gt;
+    </marquee>
+
+    <h3>Example 2: Attributes scrolling right</h3>
+    <marquee behavior="scroll" direction="right" scrollamount="5">
+        src="" &nbsp;&nbsp; href="" &nbsp;&nbsp; alt="" &nbsp;&nbsp; width="" &nbsp;&nbsp; height=""
+    </marquee>
+
+    <h3>Example 3: Images scrolling left</h3>
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        <img src="image1.jpeg" alt="Image 1" width="400" height="400">
+        &nbsp;&nbsp;
+        <img src="image2.jpg" alt="Image 2" width="400" height="400">
+        &nbsp;&nbsp;
+        <img src="image3.jpg" alt="Image 2" width="400" height="400">
+        &nbsp;&nbsp;
+        <img src="image4.jpg" alt="Image 2" width="400" height="400">
+        &nbsp;&nbsp;
+        <img src="image5.jpg" alt="Image 3" width="400" height="400">
+    </marquee>
+
+    <p><i>Note: The &lt;marquee&gt; tag is deprecated in HTML5. For modern projects, CSS animations or JavaScript are preferred for scrolling content.</i></p>
+</section>
+
+    
+</body>
+</html>
